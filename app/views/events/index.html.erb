@@ -1,2 +1,11 @@
-<h1> Hello Joé </h1>
+<div class="text-center">
+  <h1> Tous les Events</h1>
+
+  <% @events.each do |event| %>
+  <% raise %>
+    <%= event.name %>
+    <%= event.description %>
+    <%= event.reviews %>
+  <% end %>
+</div>
 

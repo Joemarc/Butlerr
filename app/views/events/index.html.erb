@@ -1,11 +1,13 @@
 <div class="text-center">
   <h1> Tous les Events</h1>
-
-  <% @events.each do |event| %>
-  <% raise %>
-    <%= event.name %>
-    <%= event.description %>
-    <%= event.reviews %>
-  <% end %>
+  <ul>
+    <% @events.each do |event| %>
+    <li>
+      <%= event.name %>
+      <%= event.description %>
+      <%= event.reviews %>
+    <% end %>
+    </li>
+  </ul>
 </div>
 

@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :set_restaurant, only: [ :show, :create]
+  before_action :set_event, only: [ :show, :create]
 
   def index
     @events = Event.all
@@ -10,17 +10,17 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new
-    # if @event.save
-    #   redirect_to event_path(@event)
-    # else
-    #   render 'new'
-    # end
+    if @event.save
+      redirect_to event_path(@event_priv)
+    else
+      render 'new'
+    end
   end
 
   private
 
   def set_event
-    @event = Event.find(params[:id])
+    @event_priv = Event.find(params[:id])
   end
 
 end

@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Event.create(name: "coiff homme", description: "blblblb" , reviews: 3)
-Event.create(name: "coiffe femme", description: "blblbl" , reviews: 3)
-Event.create(name: "shampoing", description: "blbblb", reviews: 3)
+Event.create(name: "coiff homme", description: "blblblb")
+Event.create(name: "coiffe femme", description: "blblbl")
+Event.create(name: "shampoing", description: "blbblb")

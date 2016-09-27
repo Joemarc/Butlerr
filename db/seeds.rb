@@ -6,7 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-Event.create(name: "coiff homme", description: "blblblb")
-Event.create(name: "coiffe femme", description: "blblbl")
-Event.create(name: "shampoing", description: "blbblb")
